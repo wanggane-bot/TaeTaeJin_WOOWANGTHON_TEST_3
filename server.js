@@ -7,7 +7,7 @@ const path = require('node:path')
 const PORT = Number(process.env.PORT) || 8080
 const CHAOS = process.env.CHAOS ?? ''
 const CHAOS_AFTER_SECONDS = Number(process.env.CHAOS_AFTER_SECONDS) || 180
-const page = fs.readFileSync(path.join(__dirname, 'public', 'Index.html'))
+const page = fs.readFileSync(path.join(__dirname, 'public', 'index.html'))
 const startedAt = Date.now()
 let healthy = true
 
